@@ -6,14 +6,28 @@
 
     <title>С Днём Рождения, Аделина! 🎀</title>
     <style>
+        * {
+              box-sizing: border-box;
+            }
+            
+            html, body {
+              width: 100%;
+              overflow-x: hidden;
+            }
 
         /* 📱 Mobile адаптация */
         @media (max-width: 480px) {
         .card {
-            width: 94vw;
-            padding: 22px 14px 26px;
-            border-radius: 22px;
-        }
+              background: #fff6fb;
+              padding: 20px 16px 22px;   /* чуть меньше отступы */
+              border-radius: 22px;
+              box-shadow: 0 14px 30px rgba(255, 105, 180, .28);
+              width: 100%;
+              max-width: 380px;
+              box-sizing: border-box;   /* ВАЖНО */
+              text-align: center;
+            }
+
 
         h1 {
             font-size: 20px;
@@ -320,6 +334,7 @@
     </script>
     </body>
     </html>
+
 
 
 
