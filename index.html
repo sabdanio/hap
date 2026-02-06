@@ -278,7 +278,7 @@
         try {
 
     // ▶️ запуск музыки (после клика — браузер разрешит)
-            bgMusic.volume = 0.4;  // громкость 0.0–1.0
+            bgMusic.volume = 0.2;  // громкость 0.0–1.0
             bgMusic.play().catch(() => {});
 
             audioCtx = new (window.AudioContext || window.webkitAudioContext)();
@@ -307,7 +307,7 @@
         for (let i = 0; i < data.length; i++) sum += data[i];
         const volume = sum / data.length;
 
-        const THRESHOLD = 80; // можно подкрутить
+        const THRESHOLD = 55; // можно подкрутить
 
         if (volume > THRESHOLD && !blown) {
             blown = true;
@@ -320,4 +320,5 @@
     </script>
     </body>
     </html>
+
 
